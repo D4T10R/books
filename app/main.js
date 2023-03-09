@@ -4,6 +4,7 @@ const endpointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.js
 getBuscarLivros()
 
 async function getBuscarLivros() {
+
     const resposta = await fetch(endpointDaAPI)
     livros = await resposta.json()
 
