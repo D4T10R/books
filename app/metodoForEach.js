@@ -1,8 +1,11 @@
 const elementoParaInserirLivros = document.getElementById('livros')
+const elementoPrecoLivrosDisponiveos = document.getElementById('valor_total_livros_disponiveis')
 
 
 function exibirLivros(livros) {
-    elementoParaInserirLivros.innerHTML = ' '
+    elementoParaInserirLivros.innerHTML = ''
+    elementoPrecoLivrosDisponiveos.innerHTML = ' '
+
 
     livros.forEach(livro => {
 
